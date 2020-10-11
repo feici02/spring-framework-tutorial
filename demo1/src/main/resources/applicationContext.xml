@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean name="employeeStorage" class="com.com.clearn.com.com.clearn.LocalEmployeeStorage"/>
+    <bean name="employeeLogic" class="com.com.clearn.com.com.clearn.EmployeeLogicImpl">
+        <property name="employeeStorage" ref="employeeStorage"/>
+    </bean>
+</beans>
